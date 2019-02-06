@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
-  <head>
+    <head>
 
     <meta charset="utf-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,78 +16,111 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <style type="text/css"> 
+    <style type="text/css">
 
-      /* Styles de base */
-      body {
-        font-family: 'Bitter', serif;
-        background-color: #eef;
-        color: #259;
-      }
-      nav img {
-        width: 100%;
-      }
-
-      /* Styles pour les smartphones */
-      #left, #side1, #side2 {
-        padding: 10px 10px 0 10px;
-      }
-
-      /* Styles pour les tablettes */
-      @media (min-width: 768px) {
-        #left{
-          padding: 0;
-        } 
-        #side1 {
-          padding: 10px 5px 0 0;
-        } 
-        #side2 {
-          padding: 10px 0 0 5px;
+        /* Styles de base */
+        body {
+            font-family: 'Bitter', serif;
+            background-color: #eef;
+            color: #259;
         }
-      }
+        nav img {
+            width: 100%;
+        }
 
-      /* Styles pour les écrans moyens et grands */
-      @media (min-width: 992px) {
-        #side1, #side2 {
-          padding: 0 0 10px 10px;
-        } 
-      }
- 
+        /* Styles pour les smartphones */
+        #left, #side1, #side2 {
+            padding: 10px 10px 0 10px;
+        }
+
+        /* Styles pour les tablettes */
+        @media (min-width: 768px) {
+            #left{
+                padding: 0;
+            } 
+            #side1 {
+                padding: 10px 5px 0 0;
+            } 
+            #side2 {
+                padding: 10px 0 0 5px;
+            }
+        }
+
+        /* Styles pour les écrans moyens et grands */
+        @media (min-width: 992px) {
+            #side1, #side2 {
+                padding: 0 0 10px 10px;
+            } 
+        }
+
+        .jumbotron {
+            background-color: #eef;
+            padding: 0 0 10px 10px;
+        }
+
+        .btn {
+            /*width: 50px;
+            height: 50px;*/
+            border-radius: 25px;
+            margin: 10px 0 10px 0 ;
+        }
+
     </style>
 
   </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
 
-  <body>
+                <div class="col-lg-12">
+                    <header class="jumbotron" style="padding:10px 0 10px 0">
+                        <div class="container-fluid">
 
-    <header>
-      <a href="#"><img src="assets/img/maison.png" alt="logo"></a>
-      <h1>La maison de l'architecte</h1>        
-    </header>
+                            <a href="#" class="hidden-xs pull-left"><img src="assets/img/maison.png" alt="logo"></a>
 
-    <nav>
-      <div id="left">
-        <a href="#"><img src="assets/img/city1.jpg" alt="Nos réalisations"></a>
-      </div>
-      <div id="side1">
-        <a href="#"><img src="assets/img/side1.jpg" alt="Nos projets"></a>
-      </div>
-      <div id="side2">
-        <a href="#"><img src="assets/img/side2.jpg" alt="Notre ambition"></a>
-      </div>
-    </nav>
+                            <h1 class="text-center">La maison de l'architecte</h1>
 
-    <footer>
-      <a class="btn btn-primary" href="#"><i class="fa fa-twitter fa-2x"></i></a>
-      <a class="btn btn-primary" href="#"><i class="fa fa-facebook fa-2x"></i></a>
-      <a class="btn btn-primary" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
-      <a class="btn btn-primary" href="#"><i class="fa fa-flickr fa-2x"></i></a>
-      <a class="btn btn-primary" href="#"><i class="fa fa-spotify fa-2x"></i></a>
-    </footer>
+                        </div>
+                    </header>
+                </div>
+            </div>
 
-  </body>
+            <div class="row">
+                <nav>
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12" id="left">
+                            <a href="#"><img src="assets/img/city1.jpg" alt="Nos réalisations"></a>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="row">
+                                <div id="side1" class="col-md-12 col-sm-6">
+                                    <a href="#"><img src="assets/img/side1.jpg" alt="Nos projets"></a>
+                                </div>
+                                <div id="side2" class="col-md-12 col-sm-6">
+                                    <a href="#"><img src="assets/img/side2.jpg" alt="Notre ambition"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <footer>
+                        <a class="btn btn-primary" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                        <a class="btn btn-primary" href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a class="btn btn-primary" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+                        <a class="btn btn-primary" href="#"><i class="fa fa-flickr fa-2x"></i></a>
+                        <a class="btn btn-primary" href="#"><i class="fa fa-spotify fa-2x"></i></a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </body>
 
 </html>
